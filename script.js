@@ -21,11 +21,11 @@ function update(e) {
         }
     }
     if (src == "good") {
-        if (good && fast) {
-            return document.querySelector("#cheap").checked = false;
-        }
         if (good && cheap) {
             return document.querySelector("#fast").checked = false;
+        }
+        if (good && fast) {
+            return document.querySelector("#cheap").checked = false;
         }
     }
 }
