@@ -13,19 +13,19 @@ function update(e) {
         }
     }
     if (src == "cheap") {
-        if (cheap && fast) {
-            return document.querySelector("#good").checked = false;
-        }
         if (cheap && good) {
             return document.querySelector("#fast").checked = false;
         }
+        if (cheap && fast) {
+            return document.querySelector("#good").checked = false;
+        }
     }
     if (src == "good") {
-        if (good && cheap) {
-            return document.querySelector("#fast").checked = false;
-        }
         if (good && fast) {
             return document.querySelector("#cheap").checked = false;
+        }
+        if (good && cheap) {
+            return document.querySelector("#fast").checked = false;
         }
     }
 }
